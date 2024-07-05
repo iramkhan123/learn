@@ -60,7 +60,7 @@ console.log(+"mine");
 console.log(+"123");
 */
 //comparison on same data type will give predicatble result
-console.log(1==2);
+/*console.log(1==2);
 console.log(2>1);
 //when conparison on different data type then result aint predictable
 
@@ -78,3 +78,49 @@ console.log(null>=0);
 console.log(undefined==0);
 console.log(undefined>0);
 console.log(undefined>=0);
+*/
+
+const num=123;
+
+//we never told what type the variable is going to be its by default taken as number , here javascript is a dynamica;;y typed language
+let n=12.3
+//here n is decimal but a type of number
+
+//data type is going to be either primitive or non primitive/referenc value;
+
+//primitive-> number,string,boolean,null,undefined,symbol,bigint, primitive is call by value type of integer
+//non primitve is something which is actually a call by referenc
+//array, object , function
+
+
+
+/*let arr=[123,456,980,123];
+let heros=["batman","superman","captain america"];
+console.log(arr);
+console.log(heros);
+
+let obj={
+    name:"maddy",
+    age:23,
+    address:"street 1"
+};
+console.log(obj);
+console.table(arr);
+console.table(obj);
+*/
+/*let id=Symbol("123");
+let aid=Symbol("123");
+console.log(id===aid);
+//though "123" is same in both when converted to symbol stil there will be false 
+console.log(id);//->Symbol(123)
+console.log(aid);//->Symbol(123)
+//still when compared values aint equal
+console.log(aid==id);*/
+
+
+
+const myfunction= function(){
+
+    console.log("mine");
+}
+myfunction();
