@@ -124,3 +124,31 @@ const myfunction= function(){
     console.log("mine");
 }
 myfunction();
+
+// we have two type of memory stack and heap, in stack we deal with all type of primitive values,like if change made in one variable and that value is kind of copied
+//the change wont be reflected in the first variable as we uses stack which dont point to same mmeory area;
+
+
+let val="iram";
+let anotherval=val;
+anotherval="khan";
+console.log(val);
+console.log(anotherval);
+
+//but in case of non primitive data type we uses heap area , the variable initialized is in stack but its pointing to an area in heap;
+//so if we try to copy that non primitive variable and made change in it , the changes would be reflected in both 
+
+
+let myObj={
+    name:"iram",
+    age:24
+
+};
+
+let anotherObj=myObj;
+
+anotherObj.name="sr";
+
+console.log(myObj.name);
+console.log(anotherObj.name);
+
